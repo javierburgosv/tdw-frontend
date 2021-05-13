@@ -1,0 +1,256 @@
+/* 
+    Práctica 1 - Anales de la Ciencia
+    Javier Burgos Valés - bo0260
+    IWT41 - TDW
+*/
+
+:root {
+    --dark-background: #1b262c;
+    --dark-blue: #0f4c75;
+    --primary-blue: #3282b8;
+    --light-blue: #bbe1fa;
+    --light-text: white;
+}
+
+body {
+    background-color: var(--dark-background);
+    color: var(--light-text);
+    margin: 0%;
+    height: 100%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body > * {
+    padding: 10px 2% 10px 2%;
+}
+
+header {
+    background-color: var(--primary-blue);
+}
+
+h1 {
+    margin: 0%;
+}
+
+footer {
+    background-color: var(--dark-blue);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 30px;
+    text-align: center;
+}
+
+footer > p {
+    margin: 0;
+    padding-top: 5px;
+    color: var(--light-blue);
+}
+
+a {
+    color: var(--light-blue);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:hover {
+    color: var(--light-text);
+}
+
+button {
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+}
+
+table {
+    width: 100%;
+}
+
+aside {
+    margin: 0.6em 1em;
+    height: 100%;
+    padding: 0;
+    background-color: var(--dark-blue);
+}
+
+aside > * {
+    display: none;
+}
+
+aside > #detail-view {
+    display: none;
+}
+
+.ref-link {
+    padding-right: 1em;
+}
+
+.thumnail {
+    display: block;
+    width: auto;
+    height: auto;
+    max-width: 10em;
+    max-height: 10em;
+}
+
+.mini-thumnail {
+    float: left;
+    display: block;
+    width: 1.3em;
+    height: 1.3em;
+    margin-right: 1em;
+}
+
+.element-container {
+    padding: 5px 10px;
+}
+
+.input-field {
+    transition-duration: 0.4s;
+    background-color: var(--light-blue);
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+}
+
+.input-field:hover {
+    background-color: var(--light-text);
+}
+
+.grid {
+    margin-top: 1em;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.custom-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: var(--dark-blue);
+    padding-bottom: 0.15em;
+}
+
+.section-header {
+    width: 100%;
+    text-align: center;
+    padding-top: 0.7em;
+    padding-bottom: 0.7em;
+    background-color: var(--primary-blue);
+}
+
+.list-button {
+    float: right;
+    transition-duration: 0.2s;
+    padding: 5px 10px;
+    color: var(--light-text);
+    background-color: var(--primary-blue);
+}
+
+.list-button:hover {
+    color: black;
+    background-color: var(--light-text);
+}
+
+.row-center {
+    text-align: center;
+}
+
+.add-button {
+    transition-duration: 0.4s;
+    margin: 0.5em 0.9em;
+    padding: 8px 24px;
+    color: var(--light-text);
+    background-color: var(--primary-blue);
+}
+
+.add-button:hover {
+    color: black;
+    background-color: var(--light-text);
+}
+
+#login {
+    margin-top: 2px;
+    float: right;
+}
+
+#login > * {
+    margin-left: 5px;
+}
+
+#logout-button {
+    transition-duration: 0.4s;
+    float: right;
+    display: none;
+    padding: 8px 24px;
+}
+
+#logout-button:hover {
+    background-color: var(--dark-blue);
+    color: var(--light-text);
+}
+
+#login-button {
+    transition-duration: 0.4s;
+    padding: 8px 24px;
+    color: var(--light-text);
+    background-color: var(--dark-blue);
+}
+
+#login-button:hover {
+    background-color: var(--light-text);
+    color: black;
+}
+
+#target {
+    margin: 1em 1em;
+    padding-bottom: 1em;
+}
+
+#data-input {
+    padding: 1em 1em;
+}
+
+#data-input > * {
+    display: block;
+}
+
+#data-input > #element-wiki {
+    width: 20em;
+}
+
+#data-input > #element-img {
+    width: 20em;
+}
+
+#data-input > label {
+    display: inline-block;
+    min-width: 3em;
+    margin-right: 0.2em;
+    margin-top: 0.5em;
+}
+
+#data-input > input {
+    margin-top: 0.5em;
+    margin-right: 4em;
+}
+
+.aside-button {
+    float: right;
+    margin-top: -3em;
+    margin-right: 1em;
+    transition-duration: 0.4s;
+    padding: 8px 24px;
+    background-color: var(--dark-background);
+    color: var(--light-text);
+}
+
+.aside-button:hover {
+    color: black;
+    background-color: var(--light-text);
+}

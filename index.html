@@ -1,0 +1,74 @@
+<!--
+    Práctica 1 - Anales de la Ciencia
+    Javier Burgos Valés - bo0260
+    IWT41 - TDW
+-->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Anales de la Ciencia</title>
+
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="resources/css/style.css" />
+</head>
+
+<body>
+    <header>
+        <form id="login">
+            <input id="username" type="text" name="username" placeholder="Username" class="input-field" />
+            <input id="password" type="password" name="password" placeholder="Password" class="input-field" />
+            <button id="login-button" onclick="logIn()">Log In</button>
+        </form>
+        <button id="logout-button" onclick="logOut()">Log Out</button>
+        <h1>Anales de la Ciencia</h1>
+    </header>
+    <main class="grid">
+        <section id="products" class="custom-list">
+            <div class="section-header">Productos</div>
+        </section>
+        <section id="people" class="custom-list">
+            <div class="section-header">Personas</div>
+        </section>
+        <section id="entities" class="custom-list">
+            <div class="section-header">Entidades</div>
+        </section>
+    </main>
+    <aside>
+        <div id="detail-view">
+            <div class="section-header">Detalle</div>
+        </div>
+        <div id="edit-view">
+            <div class="section-header">Editar</div>
+            
+            <form id="data-input">
+                <label for="element-name">Name</label>
+                <input id="element-name" type="text" name="element-name" class="input-field" />
+
+                <label for="element-bdate">Birth</label>
+                <input id="element-bdate" type="text" name="element-bdate" class="input-field" />
+
+                <label for="element-ddate">Death</label>
+                <input id="element-ddate" type="text" name="element-ddate" class="input-field" />
+        
+                <label for="element-wiki">Wiki</label>
+                <input id="element-wiki" type="url" name="element-wiki" class="input-field" />
+
+                <label id="label-people" for="element-people">People</label>
+                <input id="element-rpeople" type="text" name="element-rpeople" class="input-field" />
+
+                <label id="label-entities" for="element-rentities">Entities</label>
+                <input id="element-rentities" type="text" name="element-rentities" class="input-field" />
+
+                <label for="element-img">Image</label>
+                <input id="element-img" type="url" name="element-img" class="input-field" />
+            </form>
+        </div>
+    </aside>
+    <footer>
+        <p>TDW - Javier Burgos Valdés</p>
+    </footer>
+    <script src="resources/js/manager.js"></script>
+</body>
+
+</html>
