@@ -3,7 +3,7 @@
 Práctica de FrontEnd hecha utilizando HTML + CSS + JavaScript.
 No se han utlizado frameworks de ningún tipo.
 
-![alt text](https://i.imgur.com/FgzJIXA.png)
+![alt text](https://github.com/javierburgosv/tdw-frontend/blob/main/resources/img/thumnail.png?raw=true)
 
 ## Observaciones
 
